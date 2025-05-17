@@ -24,7 +24,6 @@ for (var i=0; i<25; i++) {
     img.setAttribute("alt", `The effect of the ${i+1}th highest activation of this feature`);
     img.setAttribute("style", "display: none;");
     img.setAttribute("id", `actImg${i}`);
-    img.setAttribute("class", `actImg`);
     img.setAttribute("title", String(i+1));
     holder.appendChild(img2)
     actImgs.push(img2)
