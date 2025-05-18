@@ -9,6 +9,8 @@
 <body>
 <p>The visualization below decomposes neural network activations into features using a sparse autoencoder.</p>
 <p>Click on a button to display the game states that most activate the matching feature.</p>
+<p>Each game state consists of two images: on the left is an image of the current state of the game at the time the feature activates. On the right is a graphical representation of the effect of ablating (removing) the feature: blue squares indicate that removing the feature makes the model more likely to push the virtual joystick in that direction, while red squares indicate that removing the feature makes the model more likely to avoid that direction.</p>
+
 
 <input type="text" id="featureInput" placeholder="Feature to view (0-2047)" />
 
