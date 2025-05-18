@@ -1,46 +1,98 @@
 /* General formatting */
 
 h1 {
-    background: #495bff;
-    padding: 20pt;
+    background: linear-gradient(to right, #495bff, #8a60ff); /* Gradient background */
+    padding: 15pt; /* Reduced padding */
     margin-right: -8px;
     margin-left: -8px;
     margin-top: -8px;
-    margin-bottom: 24px;
+    margin-bottom: 20px; /* Slightly less bottom margin */
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
     box-sizing: border-box;
-    color: #000000;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white; /* Light text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center; /* Center the text */
+    font-size: 1.75em; /* Slightly larger font size */
+    letter-spacing: 0.05em; /* Add letter spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
 }
 
 body {
     font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Modern font */
+    background-color: #f4f4f8; /* Light background color */
+    margin: 0; /* Reset default margin */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full height */
+    color: #333; /* Darker text */
 }
 
 #content {
-    width: 70em;
-    line-height: 1.25em;
-    margin-left: 16px;
-    margin-right: 16px;
-    border-width: 2px;
+    width: 90%; /* Make it responsive */
+    max-width: 70em;
+    line-height: 1.5em; /* Improved line height */
+    margin: 20px auto; /* Center the content */
+    border-width: 1px; /* Thinner border */
     border-style: solid;
-    border-radius: 8px;
-    border-color: #888888;
-    padding: 8px;
+    border-radius: 12px; /* More rounded corners */
+    border-color: #ddd; /* Lighter border color */
+    padding: 20px; /* More padding */
+    background-color: white; /* White content background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
 }
 
 #featureList {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
+    margin-bottom: 15px; /* Add some space below the buttons */
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+#featureList button {
+    background-color: #e0e0e0; /* Light grey buttons */
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+#featureList button:hover {
+    background-color: #d0d0d0; /* Darker grey on hover */
 }
 
 img {
-    display: inline-block;
-    margin: 4px;
+    display: block; /* Change from inline-block to block */
+    margin: 10px auto; /* Center images and add vertical spacing */
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Image shadow */
 }
 
 div.imgHolder {
-    display: block;
+    display: inline-block; /* Keep the inline-block display */
+    text-align: center; /* Center content within the holder */
+    margin: 10px; /* Add spacing between image holders */
+}
+
+#featureInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#endNote {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+    text-align: center;
 }
